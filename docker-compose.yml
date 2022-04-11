@@ -11,6 +11,11 @@ services:
       context: .
       dockerfile: Dockerfile
 
+  nginx:
+    image: nginx
+    restart: always
+    ports:
+      - "80:80"
  
 networks:
   zabbix:
